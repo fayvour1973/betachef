@@ -64,12 +64,12 @@ Accounts.create_user(%{
   password_confirmation: "456"
 })
 
-#Payment |> Repo.delete_all()
+# Payment |> Repo.delete_all()
 
-#Accounts.create_payment(%{
- # mode: "full payment",
-  #user_id: user.id
-#})
+# Accounts.create_payment(%{
+# mode: "full payment",
+# user_id: user.id
+# })
 
 Caterer |> Repo.delete_all()
 
