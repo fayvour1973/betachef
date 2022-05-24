@@ -221,6 +221,7 @@ defmodule BetachefWeb.Schema do
   end
 
   subscription do
+    #This is our new subscription feature
     @desc "subscribe to booking changes for a catering service"
     field :booking_change, :bookings_type do
       arg(:catering_service_id, non_null(:id))
