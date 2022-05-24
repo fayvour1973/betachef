@@ -160,12 +160,12 @@ defmodule BetachefWeb.Schema do
       arg(:payment_id, :id)
       resolve(&Accounts.verify_payment/3)
     end
-
+   #This is a new change
     @desc "create caterers"
     field :create_caterer, type: :caterers_type do
       arg(:country, :string)
       arg(:email, :string)
-      
+
       arg(:first_name, :string)
       arg(:full_name, :string)
       arg(:last_name, :string)
